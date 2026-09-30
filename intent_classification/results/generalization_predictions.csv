@@ -1,0 +1,136 @@
+text,true_intent,clean_text,baseline_pred,distilbert_pred
+can you cancel the order i placed yesterday,cancel_order,can you cancel the order i placed yesterday,cancel_order,cancel_order
+"i changed my mind, please cancel my purchase",cancel_order,"i changed my mind, please cancel my purchase",cancel_order,cancel_order
+how do i stop an order that hasn't shipped yet,cancel_order,how do i stop an order that hasn't shipped yet,place_order,delivery_period
+cancel order 48291 right now,cancel_order,cancel order 48291 right now,cancel_order,cancel_order
+"i don't want this order anymore, cancel it",cancel_order,"i don't want this order anymore, cancel it",cancel_order,cancel_order
+i want to swap the color of the item i ordered,change_order,i want to swap the color of the item i ordered,change_order,track_order
+can i update the quantity on my order,change_order,can i update the quantity on my order,edit_account,track_order
+need to change my order before it ships,change_order,need to change my order before it ships,change_shipping_address,change_order
+is it possible to modify what's in my cart order,change_order,is it possible to modify what's in my cart order,change_order,change_order
+please change the size i selected on my last order,change_order,please change the size i selected on my last order,edit_account,track_order
+"i moved, can you update my delivery address",change_shipping_address,"i moved, can you update my delivery address",change_shipping_address,change_shipping_address
+"wrong address on file, need to fix it",change_shipping_address,"wrong address on file, need to fix it",change_shipping_address,change_shipping_address
+how do i change where my package gets sent,change_shipping_address,how do i change where my package gets sent,delivery_period,delivery_period
+please ship to my new apartment instead,change_shipping_address,please ship to my new apartment instead,set_up_shipping_address,set_up_shipping_address
+update my shipping details before it goes out,change_shipping_address,update my shipping details before it goes out,change_shipping_address,change_shipping_address
+will i be charged anything if i cancel,check_cancellation_fee,will i be charged anything if i cancel,cancel_order,check_cancellation_fee
+is there a penalty for cancelling my order,check_cancellation_fee,is there a penalty for cancelling my order,cancel_order,cancel_order
+what's the cancellation charge on this plan,check_cancellation_fee,what's the cancellation charge on this plan,check_cancellation_fee,check_cancellation_fee
+do you charge a fee for cancelling early,check_cancellation_fee,do you charge a fee for cancelling early,check_cancellation_fee,check_cancellation_fee
+how much does it cost to cancel,check_cancellation_fee,how much does it cost to cancel,cancel_order,cancel_order
+where can i see my invoice for last month,check_invoice,where can i see my invoice for last month,check_invoice,check_invoice
+i need a copy of my billing invoice,check_invoice,i need a copy of my billing invoice,recover_password,get_invoice
+can you show me the invoice for order 552,check_invoice,can you show me the invoice for order 552,check_invoice,check_invoice
+looking for my receipt from the recent purchase,check_invoice,looking for my receipt from the recent purchase,check_invoice,check_invoice
+how do i pull up my invoice history,check_invoice,how do i pull up my invoice history,check_invoice,get_invoice
+what payment options do you accept,check_payment_methods,what payment options do you accept,check_payment_methods,check_payment_methods
+can i pay using paypal on your site,check_payment_methods,can i pay using paypal on your site,edit_account,check_payment_methods
+do you take debit cards,check_payment_methods,do you take debit cards,check_refund_policy,check_refund_policy
+is cash on delivery available,check_payment_methods,is cash on delivery available,edit_account,delivery_options
+which cards can i use to check out,check_payment_methods,which cards can i use to check out,check_refund_policy,check_payment_methods
+what's your policy on refunds,check_refund_policy,what's your policy on refunds,check_refund_policy,check_refund_policy
+how long do i have to request a refund,check_refund_policy,how long do i have to request a refund,get_refund,get_refund
+can i get my money back if i'm not happy,check_refund_policy,can i get my money back if i'm not happy,get_refund,get_refund
+explain your return and refund rules,check_refund_policy,explain your return and refund rules,check_refund_policy,check_refund_policy
+are refunds allowed on sale items,check_refund_policy,are refunds allowed on sale items,edit_account,check_refund_policy
+i'm really unhappy with the service i received,complaint,i'm really unhappy with the service i received,contact_customer_service,review
+this is the third time my order has been late,complaint,this is the third time my order has been late,delivery_period,delivery_period
+i want to file a complaint about your support team,complaint,i want to file a complaint about your support team,complaint,complaint
+very disappointed with how this was handled,complaint,very disappointed with how this was handled,contact_human_agent,delivery_period
+your app keeps crashing and it's frustrating,complaint,your app keeps crashing and it's frustrating,check_refund_policy,delete_account
+how do i get in touch with support,contact_customer_service,how do i get in touch with support,contact_customer_service,contact_customer_service
+what's your customer service phone number,contact_customer_service,what's your customer service phone number,contact_customer_service,contact_customer_service
+is there a live chat available,contact_customer_service,is there a live chat available,contact_human_agent,contact_human_agent
+i need to reach out to your help desk,contact_customer_service,i need to reach out to your help desk,newsletter_subscription,contact_customer_service
+what are your support hours,contact_customer_service,what are your support hours,contact_customer_service,contact_customer_service
+"i don't want a bot, connect me to a person",contact_human_agent,"i don't want a bot, connect me to a person",contact_human_agent,contact_human_agent
+can i speak with a real human agent,contact_human_agent,can i speak with a real human agent,contact_human_agent,contact_human_agent
+transfer me to a live representative please,contact_human_agent,transfer me to a live representative please,contact_human_agent,contact_human_agent
+"this bot isn't helping, get me a human",contact_human_agent,"this bot isn't helping, get me a human",get_refund,contact_human_agent
+i need to talk to an actual agent,contact_human_agent,i need to talk to an actual agent,contact_human_agent,contact_human_agent
+how do i sign up for a new account,create_account,how do i sign up for a new account,registration_problems,create_account
+i want to register on your platform,create_account,i want to register on your platform,edit_account,edit_account
+steps to create a profile with you,create_account,steps to create a profile with you,create_account,create_account
+can you walk me through opening an account,create_account,can you walk me through opening an account,create_account,create_account
+i'd like to make a new user account,create_account,i'd like to make a new user account,complaint,create_account
+please close my account permanently,delete_account,please close my account permanently,delete_account,delete_account
+how do i deactivate my profile,delete_account,how do i deactivate my profile,recover_password,recover_password
+i want to delete all my account data,delete_account,i want to delete all my account data,delete_account,delete_account
+remove my account from your system,delete_account,remove my account from your system,delete_account,delete_account
+can you terminate my membership account,delete_account,can you terminate my membership account,delete_account,delete_account
+what shipping methods do you offer,delivery_options,what shipping methods do you offer,delivery_options,delivery_options
+is express delivery available in my area,delivery_options,is express delivery available in my area,set_up_shipping_address,delivery_options
+can i choose overnight shipping,delivery_options,can i choose overnight shipping,delivery_options,delivery_options
+what delivery speeds can i pick from,delivery_options,what delivery speeds can i pick from,delivery_options,delivery_options
+do you offer same-day delivery,delivery_options,do you offer same-day delivery,delivery_options,delivery_options
+how many days until my order arrives,delivery_period,how many days until my order arrives,change_order,delivery_period
+what's the expected delivery time,delivery_period,what's the expected delivery time,delivery_options,delivery_period
+when should i expect my package,delivery_period,when should i expect my package,delivery_period,delivery_period
+how long does shipping usually take,delivery_period,how long does shipping usually take,check_refund_policy,delivery_period
+estimated arrival date for my order,delivery_period,estimated arrival date for my order,create_account,delivery_period
+i need to update my email on file,edit_account,i need to update my email on file,edit_account,edit_account
+how do i change my phone number in settings,edit_account,how do i change my phone number in settings,change_shipping_address,change_shipping_address
+can i edit my profile information,edit_account,can i edit my profile information,edit_account,edit_account
+update my name on the account please,edit_account,update my name on the account please,edit_account,edit_account
+how to change my account details,edit_account,how to change my account details,edit_account,edit_account
+send me the invoice for my last order,get_invoice,send me the invoice for my last order,get_invoice,get_invoice
+i need an invoice emailed to me,get_invoice,i need an invoice emailed to me,get_invoice,get_invoice
+can you generate a receipt for this purchase,get_invoice,can you generate a receipt for this purchase,get_refund,place_order
+where do i download my invoice pdf,get_invoice,where do i download my invoice pdf,get_invoice,get_invoice
+please issue an invoice for order 1123,get_invoice,please issue an invoice for order 1123,check_invoice,get_invoice
+i'd like a refund for my damaged item,get_refund,i'd like a refund for my damaged item,get_refund,get_refund
+please process my refund as soon as possible,get_refund,please process my refund as soon as possible,track_refund,track_refund
+how do i request money back for this order,get_refund,how do i request money back for this order,get_refund,get_refund
+"i never received my item, refund me",get_refund,"i never received my item, refund me",get_refund,get_refund
+can you issue a refund to my card,get_refund,can you issue a refund to my card,get_refund,track_refund
+how do i sign up for your email newsletter,newsletter_subscription,how do i sign up for your email newsletter,newsletter_subscription,newsletter_subscription
+please unsubscribe me from your emails,newsletter_subscription,please unsubscribe me from your emails,newsletter_subscription,newsletter_subscription
+i want to stop getting promotional emails,newsletter_subscription,i want to stop getting promotional emails,get_invoice,review
+add me to your mailing list,newsletter_subscription,add me to your mailing list,newsletter_subscription,newsletter_subscription
+how to opt out of newsletter updates,newsletter_subscription,how to opt out of newsletter updates,newsletter_subscription,newsletter_subscription
+my card got declined at checkout,payment_issue,my card got declined at checkout,recover_password,registration_problems
+payment failed but money was deducted,payment_issue,payment failed but money was deducted,payment_issue,get_refund
+i'm having trouble completing payment,payment_issue,i'm having trouble completing payment,payment_issue,payment_issue
+why isn't my payment going through,payment_issue,why isn't my payment going through,payment_issue,payment_issue
+there's an error when i try to pay,payment_issue,there's an error when i try to pay,payment_issue,payment_issue
+how do i place a new order,place_order,how do i place a new order,place_order,place_order
+"i want to buy this item, how do i order it",place_order,"i want to buy this item, how do i order it",place_order,place_order
+walk me through checking out,place_order,walk me through checking out,check_invoice,check_invoice
+can you help me complete my purchase,place_order,can you help me complete my purchase,place_order,place_order
+i'd like to order this product now,place_order,i'd like to order this product now,place_order,place_order
+"i forgot my password, how do i reset it",recover_password,"i forgot my password, how do i reset it",recover_password,recover_password
+"can't log in, need to recover my account password",recover_password,"can't log in, need to recover my account password",recover_password,recover_password
+send me a password reset link,recover_password,send me a password reset link,recover_password,recover_password
+"i'm locked out, help me reset my login",recover_password,"i'm locked out, help me reset my login",recover_password,recover_password
+how do i change a forgotten password,recover_password,how do i change a forgotten password,recover_password,recover_password
+i'm getting an error while signing up,registration_problems,i'm getting an error while signing up,registration_problems,registration_problems
+registration form won't submit,registration_problems,registration form won't submit,registration_problems,registration_problems
+can't verify my email during signup,registration_problems,can't verify my email during signup,registration_problems,registration_problems
+"having trouble creating an account, it keeps failing",registration_problems,"having trouble creating an account, it keeps failing",create_account,create_account
+signup process is stuck on verification,registration_problems,signup process is stuck on verification,registration_problems,registration_problems
+how do i leave a review for a product,review,how do i leave a review for a product,review,review
+i want to rate my recent purchase,review,i want to rate my recent purchase,change_order,payment_issue
+can i edit a review i already posted,review,can i edit a review i already posted,review,review
+where do i submit feedback on an item,review,where do i submit feedback on an item,review,review
+how to write a product rating,review,how to write a product rating,review,review
+"i haven't added a shipping address yet, how do i",set_up_shipping_address,"i haven't added a shipping address yet, how do i",set_up_shipping_address,set_up_shipping_address
+help me set up my delivery address for the first time,set_up_shipping_address,help me set up my delivery address for the first time,set_up_shipping_address,set_up_shipping_address
+how do i add a new address to my account,set_up_shipping_address,how do i add a new address to my account,change_shipping_address,change_shipping_address
+need to enter my shipping info before checkout,set_up_shipping_address,need to enter my shipping info before checkout,set_up_shipping_address,edit_account
+where do i input my address for deliveries,set_up_shipping_address,where do i input my address for deliveries,change_shipping_address,set_up_shipping_address
+how do i switch between my two accounts,switch_account,how do i switch between my two accounts,create_account,switch_account
+i want to change to a different user profile,switch_account,i want to change to a different user profile,switch_account,switch_account
+can i toggle to my business account,switch_account,can i toggle to my business account,delete_account,switch_account
+switch my session to another account,switch_account,switch my session to another account,switch_account,switch_account
+how to log into a different account,switch_account,how to log into a different account,create_account,switch_account
+where is my order right now,track_order,where is my order right now,track_order,delivery_period
+can you give me tracking info for my package,track_order,can you give me tracking info for my package,delivery_period,edit_account
+i want to see the status of my shipment,track_order,i want to see the status of my shipment,track_refund,track_order
+track my order number 7823,track_order,track my order number 7823,track_refund,check_invoice
+what's the current location of my delivery,track_order,what's the current location of my delivery,track_refund,set_up_shipping_address
+has my refund been processed yet,track_refund,has my refund been processed yet,track_refund,track_refund
+checking the status of my refund request,track_refund,checking the status of my refund request,track_refund,track_refund
+when will i see my refund in my account,track_refund,when will i see my refund in my account,delivery_period,track_refund
+track refund for order 5521,track_refund,track refund for order 5521,track_refund,track_refund
+how much longer until my refund clears,track_refund,how much longer until my refund clears,get_refund,track_refund
