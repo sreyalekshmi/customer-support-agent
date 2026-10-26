@@ -1,0 +1,176 @@
+{"query": "need assistance to cancel orer 48213", "relevant": ["Can I cancel my order?"], "intent": "cancel_order"}
+{"query": "I am trying to cancel purchaes 48213", "relevant": ["Can I cancel my order?"], "intent": "cancel_order"}
+{"query": "want help to cancel order 48213", "relevant": ["Can I cancel my order?"], "intent": "cancel_order"}
+{"query": "i do not knwo how to cancel order 48213", "relevant": ["Can I cancel my order?"], "intent": "cancel_order"}
+{"query": "have a question about canceling order 48213", "relevant": ["Can I cancel my order?"], "intent": "cancel_order"}
+{"query": "i dont want order 48213", "relevant": ["Can I cancel my order?"], "intent": "cancel_order"}
+{"query": "I have bought some items, help canceling purchase 48213", "relevant": ["Can I cancel my order?"], "intent": "cancel_order"}
+{"query": "would it be possible to cancel purchase 48213?", "relevant": ["Can I cancel my order?"], "intent": "cancel_order"}
+{"query": "I made a mistake, I need to correct order 48213", "relevant": ["Can I change or cancel an item in my order?"], "intent": "change_order"}
+{"query": "can I delete an item from order 48213?", "relevant": ["Can I change or cancel an item in my order?"], "intent": "change_order"}
+{"query": "could uhelp me switch some articles of order 48213", "relevant": ["Can I change or cancel an item in my order?"], "intent": "change_order"}
+{"query": "can I delete several products from order 48213?", "relevant": ["Can I change or cancel an item in my order?"], "intent": "change_order"}
+{"query": "I don't know how to change a item of purchase 48213", "relevant": ["Can I change or cancel an item in my order?"], "intent": "change_order"}
+{"query": "how can i remove several items from purchaswe 48213", "relevant": ["Can I change or cancel an item in my order?"], "intent": "change_order"}
+{"query": "I need to switch a product of order 48213", "relevant": ["Can I change or cancel an item in my order?"], "intent": "change_order"}
+{"query": "can I edit order 48213?", "relevant": ["Can I change or cancel an item in my order?"], "intent": "change_order"}
+{"query": "i have problems editing my address", "relevant": ["Can I change my shipping address after placing an order?"], "intent": "change_shipping_address"}
+{"query": "I entered a wrong delivery address, can you correct it?", "relevant": ["Can I change my shipping address after placing an order?"], "intent": "change_shipping_address"}
+{"query": "I have a problem with a delivery address modification", "relevant": ["Can I change my shipping address after placing an order?"], "intent": "change_shipping_address"}
+{"query": "I have an error changing the delivery address", "relevant": ["Can I change my shipping address after placing an order?"], "intent": "change_shipping_address"}
+{"query": "wrong address on file, need to fix it", "relevant": ["Can I change my shipping address after placing an order?"], "intent": "change_shipping_address"}
+{"query": "how to correct the shipping address", "relevant": ["Can I change my shipping address after placing an order?"], "intent": "change_shipping_address"}
+{"query": "i have a question about a goddamn shipping address change", "relevant": ["Can I change my shipping address after placing an order?"], "intent": "change_shipping_address"}
+{"query": "change shipping address", "relevant": ["Can I change my shipping address after placing an order?"], "intent": "change_shipping_address"}
+{"query": "how doI see the early termination penalty?", "relevant": [], "intent": "check_cancellation_fee", "answerable": false}
+{"query": "can youhelp me to check the cancellation fee?", "relevant": [], "intent": "check_cancellation_fee", "answerable": false}
+{"query": "where do i check the termination penalty", "relevant": [], "intent": "check_cancellation_fee", "answerable": false}
+{"query": "I want assistance to check the termination peenalty", "relevant": [], "intent": "check_cancellation_fee", "answerable": false}
+{"query": "I have to check the withdrawal fees, could you help me ?", "relevant": [], "intent": "check_cancellation_fee", "answerable": false}
+{"query": "i do not know what i need to do to check the termination fee", "relevant": [], "intent": "check_cancellation_fee", "answerable": false}
+{"query": "can you help me see the withdrawal fees?", "relevant": [], "intent": "check_cancellation_fee", "answerable": false}
+{"query": "I need to see the early termination charges, how to do it?", "relevant": [], "intent": "check_cancellation_fee", "answerable": false}
+{"query": "I do not know what to do to see my invoice #37777", "relevant": ["Can I request an invoice for my order?"], "intent": "check_invoice"}
+{"query": "i do not know how to check bill #00108", "relevant": ["Can I request an invoice for my order?"], "intent": "check_invoice"}
+{"query": "need help taking a quick look at the bill #37777", "relevant": ["Can I request an invoice for my order?"], "intent": "check_invoice"}
+{"query": "i want aswsistance taking a quick look at the invoice #85632", "relevant": ["Can I request an invoice for my order?"], "intent": "check_invoice"}
+{"query": "wanna locate the ivoice from 48213 can i get some help", "relevant": ["Can I request an invoice for my order?"], "intent": "check_invoice"}
+{"query": "i do not know how i can look for the invoice from 48213", "relevant": ["Can I request an invoice for my order?"], "intent": "check_invoice"}
+{"query": "is it possible to see the bills from 48213?", "relevant": ["Can I request an invoice for my order?"], "intent": "check_invoice"}
+{"query": "i lost the bills from 48213 could ufnid them for me", "relevant": ["Can I request an invoice for my order?"], "intent": "check_invoice"}
+{"query": "I want to see what payment options you accept", "relevant": ["What payment methods do you accept?"], "intent": "check_payment_methods"}
+{"query": "i try to check whatr payment methods uaccept", "relevant": ["What payment methods do you accept?"], "intent": "check_payment_methods"}
+{"query": "can you help me listing your accepted payment modalities?", "relevant": ["What payment methods do you accept?"], "intent": "check_payment_methods"}
+{"query": "i dont know how to check ur payment modalities", "relevant": ["What payment methods do you accept?"], "intent": "check_payment_methods"}
+{"query": "need assistaance to see the accepted payment methods", "relevant": ["What payment methods do you accept?"], "intent": "check_payment_methods"}
+{"query": "help me to see the payment options", "relevant": ["What payment methods do you accept?"], "intent": "check_payment_methods"}
+{"query": "can ya help me to see ur allowed payment methods", "relevant": ["What payment methods do you accept?"], "intent": "check_payment_methods"}
+{"query": "i want assistance to list the accepted payment methods", "relevant": ["What payment methods do you accept?"], "intent": "check_payment_methods"}
+{"query": "I have to check in which cases can I request my money back", "relevant": ["What is your return policy?"], "intent": "check_refund_policy"}
+{"query": "can you show me in what cases can I ask to be refunded?", "relevant": ["What is your return policy?"], "intent": "check_refund_policy"}
+{"query": "can I check your refund policy?", "relevant": ["What is your return policy?"], "intent": "check_refund_policy"}
+{"query": "help seeing in what cases can i request to be reimbursed", "relevant": ["What is your return policy?"], "intent": "check_refund_policy"}
+{"query": "in which cases can i ask to be reimbursed", "relevant": ["What is your return policy?"], "intent": "check_refund_policy"}
+{"query": "need to check in which cases can i ask for reimbursements", "relevant": ["What is your return policy?"], "intent": "check_refund_policy"}
+{"query": "want help to see in what cases can I request reimbursements", "relevant": ["What is your return policy?"], "intent": "check_refund_policy"}
+{"query": "show me how long refunds take", "relevant": ["What is your return policy?"], "intent": "check_refund_policy"}
+{"query": "I have got to talk with customer service, can you help me?", "relevant": ["How can I contact customer support?"], "intent": "contact_customer_service"}
+{"query": "I want to speak with customer assistance, can you help me?", "relevant": ["How can I contact customer support?"], "intent": "contact_customer_service"}
+{"query": "help me talk to customer support", "relevant": ["How can I contact customer support?"], "intent": "contact_customer_service"}
+{"query": "can I check what hours I can reach customer assistance?", "relevant": ["How can I contact customer support?"], "intent": "contact_customer_service"}
+{"query": "i dont know what i need to do to speak to customer service", "relevant": ["How can I contact customer support?"], "intent": "contact_customer_service"}
+{"query": "can yahelp me contacting customer support", "relevant": ["How can I contact customer support?"], "intent": "contact_customer_service"}
+{"query": "how to check at what time I can call customer service?", "relevant": ["How can I contact customer support?"], "intent": "contact_customer_service"}
+{"query": "I have to talk with customer support, I need help", "relevant": ["How can I contact customer support?"], "intent": "contact_customer_service"}
+{"query": "chatting with human agent", "relevant": ["How can I contact customer support?", "Do you offer live chat support?"], "intent": "contact_human_agent"}
+{"query": "I'm trying to talk with a person", "relevant": ["How can I contact customer support?", "Do you offer live chat support?"], "intent": "contact_human_agent"}
+{"query": "help me contacting a fucking human agent", "relevant": ["How can I contact customer support?", "Do you offer live chat support?"], "intent": "contact_human_agent"}
+{"query": "help to contact a person", "relevant": ["How can I contact customer support?", "Do you offer live chat support?"], "intent": "contact_human_agent"}
+{"query": "i don't want a bot, connect me to a person", "relevant": ["How can I contact customer support?", "Do you offer live chat support?"], "intent": "contact_human_agent"}
+{"query": "can i speak with a real human agent", "relevant": ["How can I contact customer support?", "Do you offer live chat support?"], "intent": "contact_human_agent"}
+{"query": "I want assistance to speak with a human agent", "relevant": ["How can I contact customer support?", "Do you offer live chat support?"], "intent": "contact_human_agent"}
+{"query": "would it be possible to talk with somebody?", "relevant": ["How can I contact customer support?", "Do you offer live chat support?"], "intent": "contact_human_agent"}
+{"query": "I do not know how to create a 48213 account", "relevant": ["How can I create an account?"], "intent": "create_account"}
+{"query": "I want help creating a 48213 account", "relevant": ["How can I create an account?"], "intent": "create_account"}
+{"query": "how to open a 48213 account?", "relevant": ["How can I create an account?"], "intent": "create_account"}
+{"query": "creatingnew 48213 account", "relevant": ["How can I create an account?"], "intent": "create_account"}
+{"query": "i have to create a 48213 account for my fiance", "relevant": ["How can I create an account?"], "intent": "create_account"}
+{"query": "I do not know how I can create a platinum account", "relevant": ["How can I create an account?"], "intent": "create_account"}
+{"query": "I want information about opening a pro account", "relevant": ["How can I create an account?"], "intent": "create_account"}
+{"query": "creating new premium account for daughter", "relevant": ["How can I create an account?"], "intent": "create_account"}
+{"query": "I don't use my 48213 account, I want help to close it", "relevant": [], "intent": "delete_account", "answerable": false}
+{"query": "I do not know what to do to remove a premium account", "relevant": [], "intent": "delete_account", "answerable": false}
+{"query": "whta do I have to do to close my 48213 account?", "relevant": [], "intent": "delete_account", "answerable": false}
+{"query": "i want assistance cancelling an 48213 account", "relevant": [], "intent": "delete_account", "answerable": false}
+{"query": "delete premium account", "relevant": [], "intent": "delete_account", "answerable": false}
+{"query": "delete freemium account", "relevant": [], "intent": "delete_account", "answerable": false}
+{"query": "please close my account permanently", "relevant": [], "intent": "delete_account", "answerable": false}
+{"query": "I don't know how I could delete my standard account", "relevant": [], "intent": "delete_account", "answerable": false}
+{"query": "help to see what shipping methods you offer", "relevant": ["Do you offer expedited shipping?", "How long does shipping take?"], "intent": "delivery_options"}
+{"query": "I need to check what delivery options I have, help me", "relevant": ["Do you offer expedited shipping?", "How long does shipping take?"], "intent": "delivery_options"}
+{"query": "can I ordrr from 48213?", "relevant": ["Do you offer expedited shipping?", "How long does shipping take?"], "intent": "delivery_options"}
+{"query": "I have to check what shipping options I have, I need help", "relevant": ["Do you offer expedited shipping?", "How long does shipping take?"], "intent": "delivery_options"}
+{"query": "wanna check what shipping methods uoffer can uhelp me", "relevant": ["Do you offer expedited shipping?", "How long does shipping take?"], "intent": "delivery_options"}
+{"query": "help me to see what shipping options I have", "relevant": ["Do you offer expedited shipping?", "How long does shipping take?"], "intent": "delivery_options"}
+{"query": "I have got to check the shipment options, I need help", "relevant": ["Do you offer expedited shipping?", "How long does shipping take?"], "intent": "delivery_options"}
+{"query": "I want assistance seeing what shipping options you offer", "relevant": ["Do you offer expedited shipping?", "How long does shipping take?"], "intent": "delivery_options"}
+{"query": "what's the expected delivery time", "relevant": ["How long does shipping take?"], "intent": "delivery_period"}
+{"query": "I want assistance checking how soon can I expect the product", "relevant": ["How long does shipping take?"], "intent": "delivery_period"}
+{"query": "help to see how soon can I expect my pacjage", "relevant": ["How long does shipping take?"], "intent": "delivery_period"}
+{"query": "need to check when my parcel is gonna arrive help me", "relevant": ["How long does shipping take?"], "intent": "delivery_period"}
+{"query": "where to check how soon can I expect my shipment?", "relevant": ["How long does shipping take?"], "intent": "delivery_period"}
+{"query": "Ineed to check how long the shipment takes", "relevant": ["How long does shipping take?"], "intent": "delivery_period"}
+{"query": "i try to see how soon can i expect the shipment", "relevant": ["How long does shipping take?"], "intent": "delivery_period"}
+{"query": "I need to see when will my package arrive, help me", "relevant": ["How long does shipping take?"], "intent": "delivery_period"}
+{"query": "edit details on gold account", "relevant": [], "intent": "edit_account", "answerable": false}
+{"query": "can i correct the data on my user account", "relevant": [], "intent": "edit_account", "answerable": false}
+{"query": "help me to modify my account", "relevant": [], "intent": "edit_account", "answerable": false}
+{"query": "modify info on platinum account", "relevant": [], "intent": "edit_account", "answerable": false}
+{"query": "change information on freemium account", "relevant": [], "intent": "edit_account", "answerable": false}
+{"query": "how do i change my phone number in settings", "relevant": [], "intent": "edit_account", "answerable": false}
+{"query": "modify 48213 account", "relevant": [], "intent": "edit_account", "answerable": false}
+{"query": "could uhelp me to change the data on my user account", "relevant": [], "intent": "edit_account", "answerable": false}
+{"query": "what do i have to do to download the invoices from 48213", "relevant": ["Can I request an invoice for my order?"], "intent": "get_invoice"}
+{"query": "I do not know how I can get the damn bill from 48213", "relevant": ["Can I request an invoice for my order?"], "intent": "get_invoice"}
+{"query": "i dont know how i can download my invoice #85632", "relevant": ["Can I request an invoice for my order?"], "intent": "get_invoice"}
+{"query": "help me to get the invoice fro 48213", "relevant": ["Can I request an invoice for my order?"], "intent": "get_invoice"}
+{"query": "I want assistance downloading the invoice from 48213", "relevant": ["Can I request an invoice for my order?"], "intent": "get_invoice"}
+{"query": "send me bill #37777", "relevant": ["Can I request an invoice for my order?"], "intent": "get_invoice"}
+{"query": "what do I have to do to download invoice #85632?", "relevant": ["Can I request an invoice for my order?"], "intent": "get_invoice"}
+{"query": "I am trying to get my invoice from 48213", "relevant": ["Can I request an invoice for my order?"], "intent": "get_invoice"}
+{"query": "how do i sign up for your email newsletter", "relevant": ["What is your email newsletter about?"], "intent": "newsletter_subscription"}
+{"query": "I want to know more about the subscription to the newsletter", "relevant": ["What is your email newsletter about?"], "intent": "newsletter_subscription"}
+{"query": "I do not know how to sign up to the company newsletter", "relevant": ["What is your email newsletter about?"], "intent": "newsletter_subscription"}
+{"query": "where do i receive ur company newsletter", "relevant": ["What is your email newsletter about?"], "intent": "newsletter_subscription"}
+{"query": "unsubscribe from company newsletter", "relevant": ["What is your email newsletter about?"], "intent": "newsletter_subscription"}
+{"query": "I don't know how I can receive the company newsletter", "relevant": ["What is your email newsletter about?"], "intent": "newsletter_subscription"}
+{"query": "assistance to cancel my corporate newsletter subscription", "relevant": ["What is your email newsletter about?"], "intent": "newsletter_subscription"}
+{"query": "how do i receive the corporate newsletter", "relevant": ["What is your email newsletter about?"], "intent": "newsletter_subscription"}
+{"query": "i have lost my account access key where can i recover it", "relevant": [], "intent": "recover_password", "answerable": false}
+{"query": "i do not know how to recover my account pass", "relevant": [], "intent": "recover_password", "answerable": false}
+{"query": "I want to recover the password of my profile", "relevant": [], "intent": "recover_password", "answerable": false}
+{"query": "i forgot my password, how do i reset it", "relevant": [], "intent": "recover_password", "answerable": false}
+{"query": "I would like information about an access key retrieval", "relevant": [], "intent": "recover_password", "answerable": false}
+{"query": "can't log in, need to recover my account password", "relevant": [], "intent": "recover_password", "answerable": false}
+{"query": "i do not know what to do to reset my access key", "relevant": [], "intent": "recover_password", "answerable": false}
+{"query": "I want help retrieving the password of my account", "relevant": [], "intent": "recover_password", "answerable": false}
+{"query": "i cant create a user need help reportinga sign-up problem", "relevant": [], "intent": "registration_problems", "answerable": false}
+{"query": "help regarding my signup", "relevant": [], "intent": "registration_problems", "answerable": false}
+{"query": "I need assistance to report issues with signup", "relevant": [], "intent": "registration_problems", "answerable": false}
+{"query": "can you help me informing of registration issues?", "relevant": [], "intent": "registration_problems", "answerable": false}
+{"query": "want help informing of a registration error", "relevant": [], "intent": "registration_problems", "answerable": false}
+{"query": "is it possible to notify of problems with sign-up?", "relevant": [], "intent": "registration_problems", "answerable": false}
+{"query": "I do not know what to do to inform of errors with signup", "relevant": [], "intent": "registration_problems", "answerable": false}
+{"query": "notifying of errors creating user", "relevant": [], "intent": "registration_problems", "answerable": false}
+{"query": "I have got to elave feedback about your products", "relevant": ["How can I leave a product review?"], "intent": "review"}
+{"query": "I do not know how to leave an opinion", "relevant": ["How can I leave a product review?"], "intent": "review"}
+{"query": "where to submit my feedback for your company?", "relevant": ["How can I leave a product review?"], "intent": "review"}
+{"query": "i do not know how i can leave a damn comment for ur peoducts", "relevant": ["How can I leave a product review?"], "intent": "review"}
+{"query": "can uhelp me to submit some feedback about ur products", "relevant": ["How can I leave a product review?"], "intent": "review"}
+{"query": "how to leave a comment for your company?", "relevant": ["How can I leave a product review?"], "intent": "review"}
+{"query": "where do i submit feedback on an item", "relevant": ["How can I leave a product review?"], "intent": "review"}
+{"query": "assistance writing a comment for your products", "relevant": ["How can I leave a product review?"], "intent": "review"}
+{"query": "want assistance to use the 48213 account", "relevant": [], "intent": "switch_account", "answerable": false}
+{"query": "help using the freemium account", "relevant": [], "intent": "switch_account", "answerable": false}
+{"query": "how to use tye 48213 account?", "relevant": [], "intent": "switch_account", "answerable": false}
+{"query": "I want assistance switching to the 48213 account", "relevant": [], "intent": "switch_account", "answerable": false}
+{"query": "i cant switch to the premium account", "relevant": [], "intent": "switch_account", "answerable": false}
+{"query": "help using the standard account", "relevant": [], "intent": "switch_account", "answerable": false}
+{"query": "help me usew the freemium account", "relevant": [], "intent": "switch_account", "answerable": false}
+{"query": "i want assistance switching to the pro account", "relevant": [], "intent": "switch_account", "answerable": false}
+{"query": "i dont know how i can see the ETA of order 48213", "relevant": ["How can I track my order?"], "intent": "track_order"}
+{"query": "check order status", "relevant": ["How can I track my order?"], "intent": "track_order"}
+{"query": "how to check the ETA of the order 48213", "relevant": ["How can I track my order?"], "intent": "track_order"}
+{"query": "wanna see purchase 48213 current status", "relevant": ["How can I track my order?"], "intent": "track_order"}
+{"query": "trackorder 48213", "relevant": ["How can I track my order?"], "intent": "track_order"}
+{"query": "need help to check the eta of purchase 48213", "relevant": ["How can I track my order?"], "intent": "track_order"}
+{"query": "help me see purchase 48213 status", "relevant": ["How can I track my order?"], "intent": "track_order"}
+{"query": "I cannot see purchase 48213 current status", "relevant": ["How can I track my order?"], "intent": "track_order"}
+{"query": "I expect a restitution of 48213 dollars, was it processed", "relevant": [], "intent": "track_refund", "answerable": false}
+{"query": "need help to check if there are any news on the restitution", "relevant": [], "intent": "track_refund", "answerable": false}
+{"query": "help me checking the goddamn reimbursement current status", "relevant": [], "intent": "track_refund", "answerable": false}
+{"query": "help me to check if there are nay news on the refund", "relevant": [], "intent": "track_refund", "answerable": false}
+{"query": "I can't see if there is anything new on the compensation", "relevant": [], "intent": "track_refund", "answerable": false}
+{"query": "I cannot know if there are any updates on my damn refund", "relevant": [], "intent": "track_refund", "answerable": false}
+{"query": "want assistance to know if there are any news on my rebate", "relevant": [], "intent": "track_refund", "answerable": false}
+{"query": "want assistance seeing my compensation current status", "relevant": [], "intent": "track_refund", "answerable": false}

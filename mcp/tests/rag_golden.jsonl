@@ -1,0 +1,46 @@
+{"query": "how do I sign up for an account", "relevant": ["How can I create an account?"]}
+{"query": "do you take paypal", "relevant": ["What payment methods do you accept?"]}
+{"query": "where can I see tracking for my parcel", "relevant": ["How can I track my order?"]}
+{"query": "can I send something back within a month for my money back", "relevant": ["What is your return policy?"]}
+{"query": "I want to cancel my order before it ships", "relevant": ["Can I cancel my order?"]}
+{"query": "how many days does standard delivery take", "relevant": ["How long does shipping take?"]}
+{"query": "do you ship abroad", "relevant": ["Do you offer international shipping?", "Can I order a product for delivery to a different country?"]}
+{"query": "my parcel never arrived", "relevant": ["What should I do if my package is lost or damaged?"]}
+{"query": "I typed the wrong address, can I fix it", "relevant": ["Can I change my shipping address after placing an order?"]}
+{"query": "is there a number I can call you on", "relevant": ["How can I contact customer support?"]}
+{"query": "can you wrap my present", "relevant": ["Do you offer gift wrapping services?"]}
+{"query": "will you match a cheaper price from another store", "relevant": ["What is your price matching policy?"]}
+{"query": "can I place an order over the telephone", "relevant": ["Can I order by phone?"]}
+{"query": "is my credit card information safe with you", "relevant": ["Are my personal and payment details secure?"]}
+{"query": "the item went on sale a few days after I bought it", "relevant": ["What is your price adjustment policy?"]}
+{"query": "how do I earn reward points", "relevant": ["Do you have a loyalty program?"]}
+{"query": "buy something without registering", "relevant": ["Can I order without creating an account?"]}
+{"query": "do you give discounts for buying in bulk", "relevant": ["Do you offer bulk or wholesale discounts?"]}
+{"query": "how to write feedback on a product I bought", "relevant": ["How can I leave a product review?"]}
+{"query": "can I stack two coupon codes", "relevant": ["Can I use multiple promo codes on a single order?"]}
+{"query": "they sent me the wrong product", "relevant": ["What should I do if I receive the wrong item?"]}
+{"query": "can I get my order faster", "relevant": ["Do you offer expedited shipping?", "How long does shipping take?"]}
+{"query": "notify me when an item is back in stock", "relevant": ["Can I order a product that is out of stock?", "Can I request a product that is out of stock to be restocked?", "Can I request a product that is listed as 'out of stock' to be restocked?", "Can I request a product that is currently out of stock to be restocked?"]}
+{"query": "what do you send in your newsletter", "relevant": ["What is your email newsletter about?"]}
+{"query": "can I talk to an agent online", "relevant": ["Do you offer live chat support?"]}
+{"query": "my coupon is rejected at checkout", "relevant": ["What should I do if my discount code is not working?"]}
+{"query": "can I send back clearance items", "relevant": ["Can I return a product if it was a final sale item?", "Can I return a product if it was a clearance or final sale item?"]}
+{"query": "do you set up the product for me at home", "relevant": ["Do you offer installation services for your products?"]}
+{"query": "can I get a printed bill for my purchase", "relevant": ["Can I request an invoice for my order?"]}
+{"query": "return something I paid for with a gift card", "relevant": ["Can I return a product if it was purchased with a gift card?", "Can I return a product if it was purchased with a promotional gift card?"]}
+{"query": "how much do I get back if I used a coupon", "relevant": ["Can I return a product if it was purchased with a discount code?", "Can I return a product if it was purchased during a sale or with a discount?", "Can I return a product if it was purchased during a promotional event?"]}
+{"query": "I lost my receipt, can I still return it", "relevant": ["Can I return a product without a receipt?", "Can I return a product if I no longer have the original receipt?"]}
+{"query": "can I order a backordered item", "relevant": ["Can I order a product if it is listed as 'backordered'?", "Can I order a product if it is listed as 'out of stock' but available for backorder?"]}
+{"query": "return a broken item that arrived in the mail", "relevant": ["Can I return a product if it was damaged during shipping?", "Can I return a product if it was damaged due to mishandling during shipping?", "Can I request a product repair or replacement if it is damaged?"]}
+{"query": "can I get an engraved personalized item", "relevant": ["Can I request a custom order or personalized product?"]}
+{"query": "can I try the product out before buying", "relevant": ["Can I request a product demonstration before making a purchase?"]}
+{"query": "I threw away the box, can I still return it", "relevant": ["Can I return a product if I no longer have the original packaging?"]}
+{"query": "will a sold out limited edition come back", "relevant": ["Can I request a product that is listed as 'limited edition' to be restocked?", "Can I order a product that is labeled as 'limited edition'?"]}
+{"query": "I bought a set, can I return just one piece", "relevant": ["Can I return a product if it was purchased as part of a bundle or set?"]}
+{"query": "refund when I paid with store credit", "relevant": ["Can I return a product if it was purchased with store credit?"]}
+{"query": "what is the capital of France", "relevant": [], "answerable": false}
+{"query": "how do I reset my password", "relevant": [], "answerable": false}
+{"query": "do you offer student discounts", "relevant": [], "answerable": false}
+{"query": "how do I delete my account and data", "relevant": [], "answerable": false}
+{"query": "what are your store opening hours in Berlin", "relevant": [], "answerable": false}
+{"query": "is this jacket waterproof", "relevant": [], "answerable": false}

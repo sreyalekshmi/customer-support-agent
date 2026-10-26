@@ -1,0 +1,53 @@
+{
+  "_comment": "SIMULATED DATA. Not from Shopify. Deterministic fixtures for development and tests.",
+  "orders": {
+    "ORD-1001": {
+      "status": "shipped",
+      "financial_status": "paid",
+      "fulfillment_status": "fulfilled",
+      "carrier": "BlueDart (mock)",
+      "tracking_number": "MOCK-TRK-1001",
+      "tracking_url": "https://tracking.example.invalid/MOCK-TRK-1001",
+      "estimated_delivery": "2026-10-25",
+      "items": [{"name": "Wireless Mouse", "quantity": 1}],
+      "total": 899.0,
+      "currency": "INR"
+    },
+    "ORD-1002": {
+      "status": "processing",
+      "financial_status": "paid",
+      "fulfillment_status": "unfulfilled",
+      "carrier": null,
+      "tracking_number": null,
+      "tracking_url": null,
+      "estimated_delivery": "2026-10-29",
+      "items": [{"name": "USB-C Hub", "quantity": 2}],
+      "total": 2398.0,
+      "currency": "INR"
+    },
+    "ORD-1003": {
+      "status": "delivered",
+      "financial_status": "paid",
+      "fulfillment_status": "fulfilled",
+      "carrier": "Delhivery (mock)",
+      "tracking_number": "MOCK-TRK-1003",
+      "tracking_url": "https://tracking.example.invalid/MOCK-TRK-1003",
+      "estimated_delivery": "2026-10-18",
+      "items": [{"name": "Mechanical Keyboard", "quantity": 1}],
+      "total": 4299.0,
+      "currency": "INR"
+    },
+    "ORD-1004": {
+      "status": "cancelled",
+      "financial_status": "refunded",
+      "fulfillment_status": "unfulfilled",
+      "carrier": null,
+      "tracking_number": null,
+      "tracking_url": null,
+      "estimated_delivery": null,
+      "items": [{"name": "Laptop Stand", "quantity": 1}],
+      "total": 1299.0,
+      "currency": "INR"
+    }
+  }
+}

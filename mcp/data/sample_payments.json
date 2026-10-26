@@ -1,0 +1,35 @@
+{
+  "_comment": "SIMULATED DATA. Not from Stripe. Amounts are in minor units (paise for INR).",
+  "payments": {
+    "pi_MOCK1001": {
+      "status": "succeeded",
+      "status_summary": "paid",
+      "amount_minor": 89900,
+      "currency": "INR",
+      "amount_received_minor": 89900,
+      "amount_refunded_minor": 0,
+      "created": "2026-10-14T09:30:00Z",
+      "failure_code": null
+    },
+    "pi_MOCK1002": {
+      "status": "requires_payment_method",
+      "status_summary": "payment not completed",
+      "amount_minor": 239800,
+      "currency": "INR",
+      "amount_received_minor": 0,
+      "amount_refunded_minor": null,
+      "created": "2026-10-20T12:05:00Z",
+      "failure_code": "card_declined"
+    },
+    "pi_MOCK1003": {
+      "status": "succeeded",
+      "status_summary": "paid",
+      "amount_minor": 429900,
+      "currency": "INR",
+      "amount_received_minor": 429900,
+      "amount_refunded_minor": 100000,
+      "created": "2026-10-10T16:45:00Z",
+      "failure_code": null
+    }
+  }
+}
