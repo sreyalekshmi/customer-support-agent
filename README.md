@@ -1,74 +1,193 @@
-# Intent Classification Module 
+# Customer Support Agent
 
+An AI-powered customer-support agent that combines intent classification, retrieval-augmented
+policy answers, and MCP tools for order and payment lookups.
 
-**Module:** Customer query intent classification (DistilBERT fine-tuned on Bitext dataset)
+The runnable application lives in [`mcp/`](./mcp/). It runs offline by default with deterministic
+mock order and payment data, so you can start it without external credentials.
 
+## What is included
 
----
+- **Agent orchestration**: routes customer messages to intent classification, RAG, or MCP tools.
+- **Intent classification**: predicts one of the supported customer-support intents.
+- **RAG policy search**: supports hybrid, semantic, and BM25 retrieval over local policy documents.
+- **MCP service layer**: exposes order and payment tools with mock backends, plus optional Shopify
+  and Stripe test-mode integrations.
+- **Web UI**: React and TypeScript frontend served by a small Python HTTP API.
+- **Terminal client**: interactive chat for quick local testing.
 
-## How to use it
+## Prerequisites
 
-Import the prediction function directly:
+- Python 3.10 or newer
+- Node.js and npm for the web frontend
+- Git
 
-```python
-from src.predict import predict_intent
+## Quick start
 
-result = predict_intent("I want a refund for my order")
+From the repository root:
+
+```bash
+cd mcp
+python -m venv .venv
 ```
 
-## Input
+Activate the virtual environment:
 
-- **Type:** `str`
-- **Format:** Raw customer query text, natural language, no special formatting needed.
-- Empty strings or non-string input will raise a `ValueError` — validate upstream if you're passing user input directly.
+```bash
+# macOS/Linux
+source .venv/bin/activate
 
-## Output
-
-Returns a `dict` with exactly two keys:
-
-```python
-{
-    "intent": "get_refund",
-    "confidence": 0.9806
-}
+# Windows PowerShell
+.venv\Scripts\Activate.ps1
 ```
 
-- `intent` (`str`): one of 27 fixed intent labels (see `data/label_map.json` for the full list).
-- `confidence` (`float`, 0–1): softmax probability of the predicted class, rounded to 4 decimals.
+Install the Python dependencies and create the local configuration:
 
----
+```bash
+python -m pip install -r requirements.txt
+cp .env.example .env
+```
 
-## Important: how to use the confidence score
+On Windows Command Prompt, use `copy .env.example .env` instead of `cp`.
+The generated configuration uses `mock` backends and does not require credentials.
 
-This is not just a diagnostic number — **please use it in your routing logic.**
+## Run the project
 
-Based on generalization testing (see `results/generalization_summary.json` and `results/generalization_with_confidence.csv`), this model was trained on Bitext's synthetic dataset and scores ~99% on that data, but drops to **~73% accuracy on natural, real-world-phrased queries**. Confidence scores meaningfully correlate with correctness:
+### Browser UI in development mode
 
-| | Avg confidence |
-|---|---|
-| Correct predictions | 0.93 |
-| Wrong predictions | 0.66 |
+Open two terminals, both starting in `mcp/`.
 
-**Recommendation:**
-- **confidence ≥ 0.6** → reasonably trustworthy, route normally.
-- **confidence < 0.6** → flag as uncertain. Route to a fallback path — human agent handoff, a clarifying follow-up question, or a "did you mean...?" confirmation step — rather than acting on it directly.
+**Terminal 1 - Python API:**
 
-This threshold catches roughly a third of misclassifications in testing. It won't catch high-confidence errors between semantically similar intents (e.g., `get_refund` vs `check_refund_policy`, `check_invoice` vs `get_invoice`) — those are a known limitation, not a bug, and worth keeping in mind if your routing logic distinguishes between such pairs.
+```bash
+source .venv/bin/activate       # Windows: .venv\Scripts\Activate.ps1
+python -m app.web
+```
 
----
+**Terminal 2 - Vite frontend:**
 
-## Full intent list
+```bash
+cd frontend
+npm install
+npm run dev
+```
 
-See `data/label_map.json` for the authoritative list of all 27 intent labels and their IDs.
+Open the local URL printed by Vite, usually `http://127.0.0.1:5173`.
+The Vite development server proxies `/api` requests to the Python service at
+`http://127.0.0.1:8000`.
 
-## Known limitations
+### Browser UI as a production build
 
-- Model is most reliable on queries with vocabulary/structure similar to standard customer-support phrasing (cancel, refund, track, invoice, account, shipping, payment topics).
-- Struggles most with: sentiment-based intents (`complaint`, `review`) when phrased indirectly, and fine-grained distinctions between semantically close intents.
-- Full error analysis available in `results/generalization_predictions.csv` if you want to see specific failure examples.
+From `mcp/`:
 
-## Files you may need
+```bash
+cd frontend
+npm install
+npm run build
+cd ..
+source .venv/bin/activate       # Windows: .venv\Scripts\Activate.ps1
+python -m app.web
+```
 
-- `models/distilbert_intent_classifier/` — the model + tokenizer (already loaded by `predict.py`, no need to touch directly)
-- `data/label_map.json` — intent ID ↔ name mapping
-- `src/predict.py` — the function you'll import
+Then open `http://127.0.0.1:8000`. The Python service serves the compiled frontend and API.
+You can change the bind address and port with `SUPPORT_HOST` and `SUPPORT_PORT`.
+
+### Terminal chat
+
+From `mcp/`, with the virtual environment activated:
+
+```bash
+python -m scripts.chat
+```
+
+Try a mock order query such as `Where is order ORD-1001?`. Press `Ctrl+C` to exit.
+
+### MCP server by itself
+
+The client normally starts the MCP server automatically. To run it directly:
+
+```bash
+python -m app.mcp_layer.server
+```
+
+The server communicates over standard input/output and logs to standard error.
+
+## Configuration
+
+Copy [`mcp/.env.example`](./mcp/.env.example) to `mcp/.env`. Never commit `.env` or put
+credentials in source code.
+
+The default offline configuration is:
+
+```dotenv
+ORDER_BACKEND=mock
+PAYMENT_BACKEND=mock
+```
+
+To use external services, configure the corresponding variables in `mcp/.env`:
+
+```dotenv
+ORDER_BACKEND=shopify
+SHOPIFY_STORE_DOMAIN=your-store.myshopify.com
+SHOPIFY_CLIENT_ID=...
+SHOPIFY_CLIENT_SECRET=...
+
+PAYMENT_BACKEND=stripe
+STRIPE_SECRET_KEY=sk_test_...
+```
+
+Only Shopify Admin API configuration and Stripe **test-mode** keys are supported. Invalid or
+incomplete real-service configuration produces an explicit configuration error; it does not
+silently fall back to mock data.
+
+For optional Groq-generated RAG answers, set `GROQ_API_KEY` (or the legacy `GROQ_API` alias).
+Without it, the application uses the deterministic source-quoting responder. LangSmith tracing
+is also optional and disabled by default.
+
+See the detailed service-layer documentation in [`mcp/README.md`](./mcp/README.md) for all
+environment variables, tool schemas, security notes, and integration details.
+
+## Tests
+
+Run the offline test suite from `mcp/`:
+
+```bash
+python -m pytest -q
+```
+
+If a globally installed pytest plugin interferes with collection:
+
+```bash
+PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 python -m pytest -q
+```
+
+The tests use mock backends and mocked HTTP responses; they do not require live Shopify, Stripe,
+or Groq credentials.
+
+## Project layout
+
+```text
+intent_classification/     Intent data, models, training scripts, and evaluation results
+mcp/app/                   Agent, RAG, MCP, configuration, and web API code
+mcp/frontend/              React + TypeScript + Vite browser application
+mcp/data/                  Mock fixtures, policy documents, and local Chroma index
+mcp/scripts/               Terminal chat and RAG evaluation utilities
+mcp/tests/                 Automated tests
+rag/                       Standalone retrieval components
+```
+
+## Troubleshooting
+
+- **`Frontend is not built yet`**: run `cd mcp/frontend && npm install && npm run build`, then
+  restart `python -m app.web`.
+- **Port 8000 is busy**: set `SUPPORT_PORT` to another port, for example
+  `SUPPORT_PORT=8001 python -m app.web`.
+- **Semantic retrieval is unavailable**: the app reports a BM25 fallback when local embedding
+  dependencies or model weights cannot be loaded.
+- **Policy changes are not reflected**: remove `mcp/data/chroma_index/` and restart the app so
+  the local index is rebuilt.
+
+## Further documentation
+
+- [MCP and external-service layer](./mcp/README.md)
+- [Intent classification module](./intent_classification/README_intent_module.md)
