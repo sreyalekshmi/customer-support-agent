@@ -17,10 +17,22 @@ def ask_for_payment_id() -> str:
     return "Happy to check that. What is your Stripe PaymentIntent ID? It starts with pi_."
 
 
+def _payment_reply(data: dict[str, object]) -> str:
+    payment_id = data["payment_id"]
+    summary = data["status_summary"]
+    text = f"Payment {payment_id} is {summary}."
+    failure_code = data.get("failure_code")
+    if isinstance(failure_code, str) and failure_code:
+        text += f" Failure reason: {failure_code.replace('_', ' ')}."
+    return text + (_SIM if data.get("simulated") else "")
+
+
 def from_tool_result(result: ToolResult) -> tuple[str, bool]:
     """Returns (reply, escalated)."""
     if result.success and result.data:
         d = result.data
+        if result.tool_name == "get_payment_status":
+            return _payment_reply(d), False
         status = d["status"]
         eta = d.get("estimated_delivery")
         eta_text = f" Estimated delivery: {eta}." if eta else ""
@@ -46,6 +58,10 @@ def from_tool_result(result: ToolResult) -> tuple[str, bool]:
         return "I couldn't find that order. Please double-check the ID.", False
     if code == "INVALID_ORDER_ID":
         return "That doesn't look like a valid order ID. IDs look like ORD-1234 or #D10.", False
+    if code == "PAYMENT_NOT_FOUND":
+        return "I couldn't find that payment. Please double-check the PaymentIntent ID.", False
+    if code == "INVALID_PAYMENT_ID":
+        return "That doesn't look like a valid Stripe PaymentIntent ID. It should start with pi_.", False
     return ("I'm having trouble reaching the order system right now. "
             "I'll pass this to a human agent."), True
 

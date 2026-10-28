@@ -19,5 +19,3 @@ venv/
 # Trained model - hosted separately
 intent_classification/models/distilbert_intent_classifier/
 
-rag/
-

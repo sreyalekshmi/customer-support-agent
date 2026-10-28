@@ -51,12 +51,12 @@ def _fallback_intent(text: str) -> tuple[str, str] | None:
         if re.search(r"\b(i|my|me|want|need|order)\b", normalized):
             return "refund_request", "fallback_refund"
         return "policy_faq", "fallback_refund_policy"
-    if any(re.search(rf"\b{word}\b", normalized) for word in _ORDER_WORDS):
-        return "order_status", "fallback_order_status"
     if any(re.search(rf"\b{word}\b", normalized) for word in _POLICY_WORDS):
         return "policy_faq", "fallback_policy"
     if re.search(r"\b(payment|paid|charged|charge|invoice)\b", normalized):
         return "payment_status", "fallback_payment"
+    if any(re.search(rf"\b{word}\b", normalized) for word in _ORDER_WORDS):
+        return "order_status", "fallback_order_status"
     return None
 
 

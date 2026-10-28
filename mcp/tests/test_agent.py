@@ -32,6 +32,7 @@ ROUTING_CASES = [
     ("purple elephants dance", "escalate", None),
     ("I was charged twice", "direct", None),  # payment lookup needs a payment ID
     ("Is payment pi_TEST123456 complete?", "mcp_tool", "get_payment_status"),
+    ("What is the status of payment pi_3UV2MPCdyHz6HKfa0JSAgvlC", "mcp_tool", "get_payment_status"),
 ]
 
 
@@ -58,6 +59,27 @@ def test_payment_intent_id_is_routed_to_stripe_mcp_tool():
     assert d.destination == "mcp_tool"
     assert d.tool_name == "get_payment_status"
     assert d.tool_arguments["payment_id"] == "pi_TEST123456"
+
+
+def test_responder_handles_payment_tool_result():
+    from app.agent.responder import from_tool_result
+    from app.schemas import ToolResult
+
+    result = ToolResult(
+        success=True,
+        tool_name="get_payment_status",
+        data={
+            "payment_id": "pi_TEST123456",
+            "status": "succeeded",
+            "status_summary": "paid",
+            "failure_code": None,
+            "simulated": False,
+        },
+    )
+    text, escalated = from_tool_result(result)
+    assert text == "Payment pi_TEST123456 is paid."
+    assert not escalated
+
 
 def test_shopify_order_name_is_routed_to_mcp():
     decision = route(req("My order number is #D10"), predict_intent("Where is my order #D10?"))
